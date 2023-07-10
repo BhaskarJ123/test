@@ -68,7 +68,7 @@ function listReducer(state = initalState, action) {
             return {
                 ...state,
                 items: state.items.map((item) => {
-                    if (item.id == action.payload.id) {
+                    if (item.id === action.payload.id) {
                         item.resolved = !item.resolved;
                     }
                     return item;
@@ -85,7 +85,7 @@ function listReducer(state = initalState, action) {
             return {
                 ...state,
                 items: state.items.map((item) => {
-                    if (item.id == action.payload.id) {
+                    if (item.id === action.payload.id) {
                         item.owner = action.payload.owner;
                         item.model = action.payload.model;
                         item.description = action.payload.description;
