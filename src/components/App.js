@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import "../styles/App.css";
 
 class App extends Component {
@@ -56,6 +56,7 @@ class App extends Component {
                 </div>
               );
             }
+            return null;
           })
         }
       </div>
